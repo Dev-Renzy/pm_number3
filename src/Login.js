@@ -37,6 +37,8 @@ class Login extends Component{
     render(){
         return(
             <div>
+                <center>
+                <header>LogIn</header>
                 <h2>
                     Name:
                 </h2>
@@ -45,9 +47,11 @@ class Login extends Component{
                     Password:
                 </h2>
                 <input type="password" placeholder="Enter Password" onChange={(e) => this.password(e)}></input>
+                <br></br>
                 <button onClick = {(e) => this.situation(e)}>OK</button>
                 <br></br>
                 <h1>{this.state.situation}</h1>
+                </center>
             </div>
         )
     }
